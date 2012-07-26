@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>OrderApp</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+	
+    <!-- My scripts&styles-->
+	
+	<link rel="stylesheet" href="css/my.css" />
+	<script type="text/javascript" href="js/cordova-2.0.0.js" ></script>
+	<script type="text/javascript" src="js/orderJS.js"></script>
+
+</head> 
+<body> 
+
+
+
+
+
+
+
+<!-- Start of page 6-->
+
+<div data-role="page" id="order_details">
+
+	<div data-role="header" data-position="fixed" >
+		
+		<a href="neworders.html" rel="external"  data-icon="back">Назад</a>
+	        <div id="logo">LOGO</div>
+	        <h1> Заказ № 11  Детальная информация</h1>
+	    
+	</div><!-- /header -->
+
+	<div data-role="content">	
+	    
+		<div id="detorder">
+		    <div id="od1">
+				<h2>OOO "Бонд"</h2>
+				<ul id="lidet"> 
+				  <li>Город: Днепропетровск</li>
+				  <li>Телефон: (056)-797-11-11</li>
+				  <li>E-mail: bond@i.ua</li>
+				</ul>
+			</div>
+
+			<div id="product">
+				<ul id="lidet"> 
+				   <li><span> Стол "ДМК"</span> (1шт)</li>
+				  
+				  <li>Цена за 1 ед. : 700грн</li>
+				  <li>Cумма за товар: 1400грн</li>
+				</ul>
+
+				<ul id="lidet"> 
+				  <li><span> Стол "ДВС"</span> (1шт)</li>
+				  
+				  <li>Цена за 1 ед. : 500грн</li>
+				  <li>Cумма за товар: 500грн</li>
+				</ul>
+				
+				<h3>Общая сумма заказа: 1900грн</h3>
+			</div>
+			
+
+		</div>
+	</div><!-- /content -->
+		
+		<div data-role="footer" data-position="fixed">
+		
+		<a href="allordersby.html" rel="external" data-role="button" data-icon="grid" >Вcе заказы этого клиента</a>
+		</div><!-- /footer -->
+		
+</div><!-- /page 6end-->
+
+
+
+</body>
+</html>

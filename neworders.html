@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>New ordres</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+	
+    <!-- My scripts&styles-->
+	
+	<link rel="stylesheet" href="css/my.css" />
+	<script type="text/javascript" src="js/orderJS.js"></script>
+	<script type="text/javascript" href="js/cordova-2.0.0.js" ></script>
+	
+	<script type="text/javascript">
+	// Wait for Cordova to load
+    //
+    document.addEventListener("deviceready", onDeviceReady, false);
+
+    // Cordova is ready
+    //
+    function onDeviceReady() {
+        var db = window.openDatabase("test", "1.0", "Test DB", 1000000);
+    }
+    //----------------------------------------------------------------------
+    function populateDB(tx) {
+     tx.executeSql('DROP TABLE IF EXISTS DEMO');
+     tx.executeSql('CREATE TABLE IF NOT EXISTS DEMO (id unique, data)');
+     tx.executeSql('INSERT INTO DEMO (id, data) VALUES (1, "First row")');
+     tx.executeSql('INSERT INTO DEMO (id, data) VALUES (2, "Second row")');
+	}
+
+	function errorCB(err) {
+	    alert("Error processing SQL: "+err.code);
+	}
+
+	function successCB() {
+	    alert("success!");
+	}
+
+	var db = window.openDatabase("Database", "1.0", "Cordova Demo", 200000);
+	db.transaction(populateDB, errorCB, successCB);
+
+
+
+
+	</script>
+
+
+
+
+</head> 
+<body> 
+
+
+<!-- ---------------------------------Start of  page  2  -----------------------------------------------  -->
+<div data-role="page" id="newOrders">
+
+	<div data-role="header" data-position="fixed" >
+		<div id="logo">LOGO</div>
+		<a href="index.html" rel="external" data-icon="back" >Назад</a>
+	        <h1> Новые заказы</h1>
+	    
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<ul data-role="listview"  class="ui-listview" id="ulord">
+				<li><a href="orderdetails.html">№11 ООО "Язь"
+				<p class="p1">Сумма: 400 грн </p>
+				</a></li>
+					   
+				<li><a href="orderdetails.html">№10 ООО "Язь"
+				<p class="p1">Сумма: 500 грн </p>
+				</a></li>
+						
+				<li><a href="orderdetails.html">№9 ООО "Язь"
+				<p class="p1">Сумма: 500 грн </p>
+				</a></li>
+
+				<li><a href="orderdetails.html">№8 ООО "Язь"
+				<p class="p1">Сумма: 500 грн </p>
+				</a></li>
+
+				<li><a href="orderdetails.html">№7 ООО "Язь"
+				<p class="p1">Сумма: 500 грн </p>
+				</a></li>
+
+				<li><a href="orderdetails.html">№6 ООО "Язь"
+				<p class="p1">Сумма: 500 грн </p>
+				</a></li>
+
+				<li><a href="orderdetails.html">№5 ООО "Язь"
+				<p class="p1">Сумма: 500 грн </p>
+				</a></li>
+				
+				<li><a href="orderdetails.html">№4 ООО "Язь"
+				<p class="p1">Сумма: 500 грн </p>
+				</a></li>
+				
+				<li><a href="orderdetails.html">№3 ООО "Язь"
+				<p class="p1">Сумма: 500 грн </p>
+				</a></li>
+			</ul>
+
+	</div><!-- /content -->
+		
+		<div data-role="footer" data-position="fixed">
+				<div data-role="navbar" data-iconpos="left"  >
+				<ul>
+					<li><a href="#"   id="refr" data-icon="refresh">Обновить</a></li>
+
+				</ul>
+	        </div><!-- /navbar -->
+		</div><!-- /footer -->
+		
+</div><!-- /page 2end-->
+
+</body>
+</html>

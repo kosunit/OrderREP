@@ -1,0 +1,77 @@
+#logo{
+ float:right;
+ width: 6em;
+ color: #4DFF00;
+ padding: 10px;
+}
+
+#cs{
+	border:2px solid #ccc;
+
+}
+
+#cs p {
+	font-weight: bold;
+	padding-left: 50%;
+	font-size: 32px;
+}
+
+#alls{
+	color:#cda000;
+}
+
+#rb{
+	float:right;
+}
+
+#newo{
+	color:#FF120A;
+}
+
+#od1{
+    border:2px solid #ccc;
+     border-radius:0.5em;
+}
+
+#lo
+
+
+
+.p1{
+	margin-top:0.3em;
+	font-size: 1em;
+}
+
+ #lidet{
+	list-style-type: none;
+}
+
+#lidet span{
+	color: #1486FF;
+	font-weight: bold;
+}
+
+#od1{
+	margin-top: 0.8em;
+}
+
+#od1 h2{
+ 	padding-left: 1.7em;
+}
+
+#product{
+	 border:2px solid #ccc;
+	 margin-top: 0.8em;
+	 -webkit-border-radius:6px;
+	 border-radius:0.5em;
+}
+
+#product h3{
+ 	padding-left: 2em;
+}
+
+#min{
+	font-style: italic;
+	font-weight: bold;
+	color: #3EABE2;
+}
